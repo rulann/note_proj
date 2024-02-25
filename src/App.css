@@ -1,0 +1,281 @@
+body{
+  background-color: #282c34;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.left{
+  float: left;
+  height: 100%;
+}
+
+.main{
+  float: right;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  width: 80%;
+}
+
+.takeNote{
+  margin-right: 700px;
+  margin-top: -130px;
+  width: 800px;
+  height: 220px;
+  border: #5F6368 solid 1px;
+  background-color: #282c34;
+  color: #c6c9cb;
+  font-size: large;
+  padding-left: 20px;
+  border-radius: 9px;
+}
+
+.Notebody, .title{
+  width: 720px;
+  height: 25px;
+  color:#c6c9cb;
+  font-size: x-large;
+  background-color: #282c34;
+  border: none;
+}
+
+.Notebody:focus, .title:focus{
+  border: none;
+  outline: none;
+}
+
+.title{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.Notebody{
+  font-weight: 500;
+  padding-top: 10px;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  resize: none;
+}
+
+.done{
+  color: #c6c9cb;
+  background-color: #282c34;
+  float: right;
+  margin-right: 12px;
+  margin-top: 70px;
+  width: 100px;
+  height: 30px;
+  font-size: x-large;
+  border: none;
+  cursor: pointer;
+}
+
+.bell{
+  color: #c6c9cb;
+  background-color: #282c34;
+  float: left;
+  margin-left: -20px;
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  font-size: x-large;
+  border: none;
+  cursor: pointer;
+}
+
+.newNote{
+  color: #c6c9cb;
+  background-color: #282c34;
+  border: 2px solid #5F6368 ;
+  display: inline-block;
+  width: 31%;
+  border-radius: 9px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  margin: 12px;
+  margin-left: 0px;
+}
+
+.leftnav{
+ margin-top: 50px;
+}
+
+.navItem{
+  border: none;
+  width: 152px;
+  height: 20px;
+  background-color: #282c34;
+  color: white;
+  border-radius: 20px;
+  list-style: none;
+  font-size: large;
+  text-align: justify;
+  padding: 10px;
+}
+
+.navItem:active, .navItem:focus, .navItem:hover{
+  background-color: #535558;
+}
+
+li{
+  list-style: none;
+  margin: 30px;
+}
+
+.icons{
+  width:  20px;
+  margin-right: 20px;
+}
+
+.details{
+  margin-top: 13px;
+  margin-right:5px;
+  border: none;
+  float: right;
+  background-color: #282c34;
+  color: white;
+  width: 30px;
+}
+
+.options{
+  float: right;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1px;
+}
+
+.option:hover{
+  background-color: #727376;
+  cursor: pointer;
+  color: #eceff3;
+}
+
+.delete:hover{
+  background-color: crimson;
+  cursor: pointer;
+}
+
+.option, .delete, .colosList{
+  width: 68px;
+  text-align: center;
+  border-radius: 10px;
+  color: #282c34;
+}
+
+.pallete{
+  float: right;
+  width: 30px;
+  margin-top: 55px;
+}
+
+.pallete:hover, .colosList:hover, .colorbtn:hover{
+  cursor: pointer;
+}
+
+.colors{
+  width: 30px;
+  border-radius: 50%;
+}
+
+.colorsoption{
+  float: right;
+}
+
+.colorbtn{
+  background-color: #282c34;
+  border: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/* Add this to your existing CSS file */
+.react-datetime-picker__wrapper {
+  position: relative;
+}
+
+.react-datetime-picker__inputGroup {
+  display: flex;
+  align-items: center;
+  margin-top: 15px; /* Adjust as needed */
+}
+
+.react-datetime-picker__inputGroup__input {
+  border: none;
+  padding: 15px; 
+  font-size: 24px; 
+  width: 520px; 
+  line-height: 1.5; 
+}
+
+.react-datetime-picker__calendar {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  z-index: 1;
+  background-color: #282c34;
+  border: 1px solid #5F6368;
+  border-radius: 5px;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.react-datetime-picker__calendar .react-calendar {
+  border: none;
+}
+
+.react-datetime-picker__calendar .react-calendar__tile--now {
+  background: #61dafb;
+  color: #282c34;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #61dafb;
+  color: #282c34;
+}
+
+.react-datetime-picker__calendar button:enabled:hover,
+.react-datetime-picker__calendar button:enabled:focus {
+  background: #61dafb;
+  color: #282c34;
+}
+
+.react-datetime-picker__calendar button:enabled:active {
+  background: #61dafb;
+  color: #282c34;
+}
